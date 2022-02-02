@@ -1,0 +1,131 @@
+h1, h2, h3 {
+  font-family: 'roboto', sans-serif;
+  color: white;
+  line-height: 1em;
+}
+
+h2 {
+  color: rgba(255, 255, 255, 70%);
+}
+
+p {
+  font-family: 'roboto-mono', monospace;
+  color: white;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+a {
+  color: white;
+  font-family: 'roboto', sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #598392;
+}
+
+i {
+  font-size: 40px;
+}
+
+#background-video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: fixed;
+  min-width: 100%; min-height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  /* position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+  /* background: url(polina.jpg) no-repeat; */
+  /* background-size: cover; */
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  min-width: 100%; min-height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.btn-blue {
+  padding: 5px;
+  border-radius: 5px;
+  font-family: 'roboto', sans-serif;
+  font-size: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0%);
+  border: 2px solid white;
+}
+
+.btn-blue:hover{
+  border: none;
+  background-color: #598392;
+  border: 2px solid #598392;
+  color: white;
+}
+
+
+.card-top {
+  padding: 2vh 10vw;
+  border: 2px solid rgba(255, 255, 255, 70%);
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4vh;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+#github-btn {
+  opacity: 0;
+  animation: ani-intro-shout .6s 0.2s forwards cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+#linkedin-btn {
+  opacity: 0;
+  animation: ani-intro-shout .6s 0.6s forwards cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+#instagram-btn {
+  opacity: 0;
+  animation: ani-intro-shout .6s 1s forwards cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes ani-intro-shout {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0vh 1vw;
+}
